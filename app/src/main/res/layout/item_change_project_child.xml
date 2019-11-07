@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_child_bg"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" >
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" 
+            android:visibility="gone">
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/localhostPrice" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/localhostPriceTxt"
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/count" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/countTxt"
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/insur" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/insurTxt"
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/salvage" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/salvageTxt"
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lossOfMoreThan" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/lossOfMoreThanTxt"
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pricePlan" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/pricePlanTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/remark" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/remarkTxt"
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

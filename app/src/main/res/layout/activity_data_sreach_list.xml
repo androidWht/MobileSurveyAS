@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <!-- title layout start -->
+
+    <RelativeLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#555555"
+        android:padding="5dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="归档案件数据"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/dataBrackBtn"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sm_loss_retun_back"
+            android:padding="5dip" />
+
+        <Button
+            android:id="@+id/dataSearchBtn"
+            android:layout_width="70dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/sm_loss_btn"
+            android:text="查 询"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <!-- title layout end -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/data_sreach_list"
+        android:textColor="#080808"
+        android:textSize="23dip"
+        android:visibility="gone" />
+    <!-- caseList layout start -->
+
+    <LinearLayout
+        android:id="@+id/tableRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/new_list_title"
+        android:gravity="center_vertical"
+        android:padding="10dip" >
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/report_no" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="任务" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/report_people"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="报案时间"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="@string/option"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/dataSreachList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dip"
+        android:cacheColorHint="#00000000"
+        android:divider="#FFCC00"
+        android:fadingEdge="none"
+        android:groupIndicator="@null" />
+    <!-- caseList layout end -->
+
+</LinearLayout>

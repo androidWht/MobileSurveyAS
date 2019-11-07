@@ -1,0 +1,220 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <!-- title layout start -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#555555"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/taskReturnBtn"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sm_loss_retun_back"
+            android:text="@string/back"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/caseCenterTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/task_center"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/taskfilter"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/sm_loss_btn"
+            android:gravity="center"
+            android:text="筛 选"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/taskChoose"
+            android:layout_width="50dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/sm_loss_menu"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- title layout end -->
+
+
+    <!-- taskList's  title layout end -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:text=" 任务列表"
+        android:textColor="#080808"
+        android:textSize="23dip"
+        android:visibility="gone" />
+
+    <!-- taskList layout start -->
+
+    <LinearLayout
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/new_list_title"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/task_list_registno"
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:paddingTop="3dp"
+            android:text="报案号" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="任务类型"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="报案／联系人"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="出险地点"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1.0"
+            android:text="车牌号" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:text="状态"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="操作"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/taskCenterList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#FFCC00"
+        android:fadingEdge="none"
+        android:indicatorLeft="10dp" >
+    </ExpandableListView>
+    <!-- taskList layout end -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/allBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/new_login_loginbtn"
+            android:text="@string/all_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/lossBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/new_login_canclebtn"
+            android:text="@string/loss_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/surveyBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/new_login_canclebtn"
+            android:text="@string/survey_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/retreat_lossBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="24dip"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/new_login_canclebtn"
+            android:text="@string/retreat_loss"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

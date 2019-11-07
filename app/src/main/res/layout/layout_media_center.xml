@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="0dip" >
+    
+    <RelativeLayout
+        android:id="@+id/headLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#555555"
+        android:visibility="gone"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/taskReturnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sm_loss_retun_back"
+            android:text="@string/back"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/caseCenterTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="影像中心"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#636363"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="照片类型"
+                android:textColor="#ffffff"
+                android:textSize="20dip" 
+                android:visibility="gone"/>
+
+            <GridView
+                android:id="@+id/mediaList"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/media_left_bg"
+                android:cacheColorHint="#00000000"
+                android:numColumns="2"
+                android:divider="@drawable/media_divider" >
+            </GridView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/media_btn_layout"
+                android:layout_margin="5dip"
+                android:background="@drawable/sm_loss_camera_bg"
+                android:orientation="vertical"
+                android:padding="5dip" >
+
+                <RelativeLayout
+                    android:id="@+id/galleryRelativeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@+id/btn_layout1"
+                    android:padding="5dip" >
+					
+                    <com.sinosoft.ms.utils.component.ImageGallery
+                        android:id="@+id/mediaImageGallery"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:spacing="10dip" />
+
+                    <ImageView 
+                        android:visibility="gone"
+                        android:id="@+id/leftImgBtn"
+						android:src="@drawable/left_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"/>
+                    
+                    <ImageView 
+                        android:visibility="gone"
+                        android:id="@+id/rightImgBtn"
+                        android:text="右图片"
+                        android:src="@drawable/right_arrow"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                       android:gravity="right"
+                        android:layout_height="wrap_content"/>
+                    
+                    <Button
+                        android:id="@+id/mediaDeleteBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/sm_loss_delete_btn"
+                        android:orientation="vertical"
+                        android:text="删除"
+                        android:textColor="#ffffff" >
+                    </Button>
+
+                    <RelativeLayout
+                        android:id="@+id/media_gallery_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="30dip"
+                        android:gravity="center" >
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+                  <ImageButton
+                        android:id="@+id/leftArrowBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/galleryRelativeLayout"
+                        android:background="#1FFFFFFF"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/left_arrow_btn" />
+
+                    <ImageButton
+                        android:id="@+id/rightArrowBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/galleryRelativeLayout"
+                        android:background="#1FFFFFFF"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/right_arrow_btn" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/media_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/mUploadImgBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:text="本地文件"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/mediaTakePictureBtn"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/sm_loss_take_photo"
+                    android:orientation="vertical"
+                    >
+
+                </Button>
+
+                <Button
+                    android:id="@+id/directUploadBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:text="影像上传"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- center core layout end -->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">移动查勘定损</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">移动查勘定损</string>
+    <string name="title_acticity_login">用户登录</string>
+    <string name="slogan">服务公众   众诚天下</string>
+    <string name="company">众诚汽车保险股份有限公司</string>
+    <string name="back"/>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="remember_me">记住我的用户名</string>
+    <string name="sign_in_txt">签到</string>
+    <string name="primary_survey">我是主查勘员</string>
+    <string name="dispatch">接收查勘任务</string>
+    <string name="loss">接收定损任务</string>
+    <string name="agent_driving">接收代驾任务</string>
+    <string name="login">登 录</string>
+    <string name="cancel">取 消</string>
+    <string name="system_set">系统设置</string>
+    <string name="case_center">案件中心</string>
+    <string name="task_center">任务中心</string>
+    <string name="exit_system">退出系统</string>
+    <string name="convert_user">切换用户</string>
+    <string name="suspend_resume">暂停接收任务／恢复接收任务</string>
+    <string name="curr_task">您现在有2个待接收任务，5个待处理任务</string>
+    <string name="task_summary_title">任务概要：</string>
+    <string name="task_list_title">任务列表：</string>
+    <!-- case center start -->
+    <string name="case_list_title">案件列表</string>
+    <string name="report_no">报案号</string>
+    <string name="task_type">任务类型</string>
+    <string name="report_people">报案人／联系人</string>
+    <string name="phone">联系电话</string>
+    <string name="insurance_addr">出险/定损地点</string>
+    <string name="insurance_reason">出险原因：</string>
+    <string name="insurance_time">出险时间：</string>
+    <string name="report_time">报案时间：</string>
+    <string name="status">状态</string>
+    <string name="option">操作</string>
+    <string name="survey_task">查勘任务</string>
+    <string name="loss_task">定损任务</string>
+    <string name="reflash">刷新</string>
+    <string name="complete">已完成</string>
+    <string name="no_complete">未完成</string>
+    <string name="all_btn">全部</string>
+    <string name="return_btn">返回</string>
+    <string name="screening_btn">筛选</string>
+    <string name="survey_btn">查勘</string>
+    <string name="loss_btn">定损</string>
+    <string name="retreat_loss">核损退回</string>
+    <string name="retreat_count_loss">核算退回</string>
+    <string name="private_survey">司内查勘</string>
+    <string name="simple_loss">简易定损</string>
+    <string name="re_designated">改派</string>
+    <string name="withdrawal_report">撤案</string>
+    <string name="look_btn">查看</string>
+    <string name="to_file_btn">归档</string>
+    <string name="complete_btn">完成</string>
+    <!-- case center end -->
+    <!--  confirmdamage start -->
+    <string name="confirmdamage_info">核损详情</string>
+    <string name="claims_assessment_info">核赔详情</string>
+    <!--  confirmdamage end-->
+    <!-- surveyTreatment start -->
+    <string name="survey_treatment">查勘详情</string>
+    <string name="basic_info">基本信息</string>
+    <string name="vehicle_involved">涉案车辆</string>
+    <string name="property_damage">财产损失</string>
+    <string name="person_injured">人伤信息</string>
+    <string name="survey_propagation">查勘扩展</string>
+    <string name="survey_liablitydio">责任比例</string>
+    <string name="insurance_policy">保单信息</string>
+    <string name="images_data">影像资料</string>
+    <string name="images_center">影像中心</string>
+    <!-- surveyTreatment end -->
+    <!-- basicInfo start -->
+    <string name="whether_subrogation">是否代位求偿：</string>
+    <string name="claim_form">索赔申请书：</string>
+    <string name="accident_handle_type">事故处理类型：</string>
+    <string name="case_nature">案件性质：</string>
+    <string name="claim_case_category">赔案类别：</string>
+    <string name="loss_type">损失类别：</string>
+    <string name="accident_cause">出险原因：</string>
+    <string name="accident_type">事故类型：</string>
+    <string name="survey_type">查勘类型：</string>
+    <string name="survey_addr">查勘地点：</string>
+    <string name="survey_time">查勘时间：</string>
+    <string name="contact_person">联系人：</string>
+    <string name="contact_phone">联系电话：</string>
+    <string name="touch_for">互碰自赔：</string>
+    <string name="survey_of_1">查勘员1：</string>
+    <string name="survey_of_2">查勘员2：</string>
+    <string name="first_site_survey">第一现场查勘：</string>
+    <string name="danger_place">出险地点：</string>
+    <string name="accident_processing_department">事故处理部门：</string>
+    <string name="mapping_class">查勘类别：</string>
+    <string name="quick_office_for">快处快赔：</string>
+    <string name="double_free">双免：</string>
+    <string name="survey_feedback">查勘意见：</string>
+    <string name="report_person">报案人：</string>
+    <string name="report_phone">报案电话：</string>
+    <string name="report_mobile">报案人手机：</string>
+    <!-- basicInfo end -->
+    <!-- VehicleInvolve start -->
+    <string name="vehicle_involved_info">涉案车辆信息</string>
+    <string name="license_no_1">车牌号：</string>
+    <string name="the_owner_1">车主：</string>
+    <string name="number_plate_type_1">号牌种类：</string>
+    <string name="engine_number_1">发动机号：</string>
+    <string name="frame_number_1">车架号：</string>
+    <string name="vehicle_involved_call">提交修改</string>
+    <string name="loss_detail">损失明细 </string>
+    <string name="the_driver">驾驶员信息 </string>
+    <string name="modify">修改</string>
+    <!-- VehicleInvolve end -->
+    <!-- InvolvModify start -->
+    <string name="vehicle_involved_modify">涉案车辆修改</string>
+    <string name="vehicle_involved_prompt">请填写涉案车辆信息：</string>
+    <string name="loss_type_1">损失类别：</string>
+    <string name="license_no">车牌号：</string>
+    <string name="the_owner">车主：</string>
+    <string name="number_plate_type">号牌种类：</string>
+    <string name="strong_type">交强险责任类型：</string>
+    <string name="engine_number">发动机号：</string>
+    <string name="frame_number">车架号／VIN：</string>
+    <!-- InvolvModify end -->
+    <!-- LossDetail start -->
+    <string name="loss_detail_title">损失详情</string>
+    <string name="loss_details">定损详情</string>
+    <string name="vehicle_involved_loss_detail">涉案车辆损失详情：</string>
+    <string name="loss_situation">损失情况</string>
+    <string name="estimated_loss_amount">估损金额：</string>
+    <string name="salvage_charges">施救费用：</string>
+    <string name="survey_sites">查勘地点：</string>
+    <string name="travel_a_few_kilometers">已行驶公里数：</string>
+    <string name="if_the_refit">是否改装或加装：</string>
+    <string name="survey_date">查勘日期：</string>
+    <string name="carry_dangerous_goods">是否运载危险品：</string>
+    <string name="reservation_for_lossAddr">预约定损地点：</string>
+    <string name="liability_ratio">责任比例</string>
+    <string name="ratio">商业险赔偿责任比例：</string>
+    <string name="loss_area">损失部位(多选)：</string>
+    <string name="detele">删除</string>
+    <!-- LossDetail end -->
+    <!-- loss_detail_modefy start -->
+    <string name="loss_detail_modefy_title">损失详情修改</string>
+    <string name="loss_detail_modefy_prompt">请填写损失详情信息：</string>
+    <string name="loss_situation_1">损失情况：</string>
+    <string name="liability_ratio_1">商业险赔偿责任：</string>
+    <!-- loss_detail_modefy end -->
+    <!-- the_driver start -->
+    <string name="the_driver_detail">驾驶员信息：</string>
+    <string name="the_driver_detail_name">驾驶员姓名</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="quasi_driving_type">准驾车型</string>
+    <string name="age">年龄</string>
+    <string name="certificates_type">证件类型</string>
+    <string name="certificates_number">证件号码</string>
+    <string name="driving_license_number">驾驶证号</string>
+    <string name="tel">电话</string>
+    <string name="first_license_date">初次领证日期</string>
+    <!-- the_driver end -->
+    <!-- the_driver_modefy start -->
+    <string name="the_driver_modefy_title">驾驶员信息修改</string>
+    <string name="the_driver_modefy_prompt">请填写驾驶员信息：</string>
+    <string name="the_driver_detail_name_1">驾驶员姓名：</string>
+    <string name="tel_1">电话：</string>
+    <string name="quasi_driving_type_1">准驾车型：</string>
+    <string name="certificates_type_1">证件类型：</string>
+    <string name="driving_license_number_1">驾驶证号：</string>
+    <!-- the_driver_modefy end -->
+    <!-- property_damage start -->
+    <string name="property_loss">财产损失情况：</string>
+    <string name="losing_party">损失方：</string>
+    <string name="contact_person_damage">联系人：</string>
+    <string name="contact_mode">联系方式：</string>
+    <string name="estimated_loss_amount_damage">估损金额：</string>
+    <string name="significant_case">是否重大赔案：</string>
+    <string name="survey_date_damage">查勘日期：</string>
+    <string name="rescue_process">施救过程：</string>
+    <string name="remarks">备注：</string>
+    <string name="loss_of_property_list">财产损失清单：</string>
+    <string name="loss_property_name">损失财产名称</string>
+    <string name="loss_amount">损失金额</string>
+    <string name="loss_extent">损失程度</string>
+    <string name="loss_type_damage">损失种类</string>
+    <string name="copy">复制</string>
+    <string name="get_my_position"> 获取我的位置</string>
+    <!-- property_damage end -->
+    <!-- property_damage_modefy start -->
+    <string name="property_damage_modefy_title">财产损失修改</string>
+    <string name="fill_information">请填写以下信息</string>
+    <!-- property_damage_modefy end -->
+    <!-- person_injured start -->
+    <string name="casualties">人员伤亡情况：</string>
+    <string name="loss_ownership">损失归属方：</string>
+    <string name="injured_number">重伤人数：</string>
+    <string name="minor_number">轻伤人数：</string>
+    <string name="death_number">死亡人数：</string>
+    <string name="estimated_loss_amount_injured">估损金额：</string>
+    <string name="salvage_charges_injured">施救费用：</string>
+    <string name="injuries_info_item">人伤信息清单：</string>
+    <string name="injuries_types">伤亡类型</string>
+    <string name="whether_to">是否自行就医</string>
+    <string name="hospital">就诊医院</string>
+    <string name="state_description">伤情描述</string>
+    <!-- person_injured end -->
+    <!-- person_injured_modefy start -->
+    <string name="person_injured_modefy_title">人伤信息修改</string>
+    <!-- person_injured_modefy end -->
+    <!-- data_sreach start -->
+    <string name="data_sreach_title">数据查询</string>
+    <string name="data_sreach_condition">数据查询条件</string>
+    <string name="report_no_1">报案号：</string>
+    <string name="task_type_sreach">任务类型：</string>
+    <string name="to_time">到：</string>
+    <string name="data_sreach_list">数据查询列表</string>
+    <string name="data_sreach_result">归档案件数据</string>
+    <string name="detail">详细</string>
+    <string name="actual_effect">时效</string>
+    <!-- data_sreach end -->
+    <!-- actual_effect start -->
+    <string name="processing_stage">处理阶段</string>
+    <string name="reception_time">接收时间</string>
+    <string name="processing_start_time">处理开始时间</string>
+    <string name="processing_end_time">处理结束时间</string>
+    <string name="processing_result">处理结果</string>
+    <string name="min_time">耗时(分钟)</string>
+    <string name="effect_status">状态</string>
+    <string name="status_1">状态：</string>
+    <string name="actual_effect_title">时效信息</string>
+    <string name="actual_effect_item">时效信息清单</string>
+    <!-- actual_effect end -->
+    <!-- system setting start -->
+    <string name="reception_push_info">接收系统推送信息</string>
+    <string name="picture_manager">照片管理</string>
+    <string name="pic_loaction_save">照片上传后在本地保存</string>
+    <string name="pic_save_to_sdcard_card">照片保存在系统内存，内存剩余 </string>
+    <string name="pic_save_to_exc_card">照片保存在扩展内存，内存剩余</string>
+    <string name="pic_location_save_day">照片本地保存天数：</string>
+    <string name="day">天</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="check_version">检查新版本</string>
+    <!-- system setting end -->
+    <!-- images_data start -->
+    <string name="case_info_list">案件信息</string>
+    <string name="take_picture">任务拍照</string>
+    <string name="picture_setting">照片设置</string>
+    <string name="picture_back">返回</string>
+    <string name="picture_completeing">完成</string>
+    <string name="picture_brower_title">照片预览</string>
+    <!-- images_data end -->
+    <!-- task -->
+    <string name="loss_take_photo">1</string>
+    <string name="refuse_task_title">拒绝任务</string>
+    <string name="refuse_task_prompt">请填写拒绝任务信息：</string>
+    <string name="refuse_reason_txt">拒绝原因</string>
+    <string name="refuse_call_task">拒绝调度</string>
+    <string name="accept_task_title">接收任务</string>
+    <string name="accept_task_prompt">请填写接收任务信息：</string>
+    <string name="accept_call_task">接收调度</string>
+    <string name="need_to_remind">需要提醒</string>
+    <string name="place_on_file_task_title">归档任务</string>
+    <string name="place_on_file_task_prompt">请填写归档任务信息：</string>
+    <string name="place_on_file_call_task">归档申请</string>
+    <string name="application_to_send_title">申请改派</string>
+    <string name="application_to_send_prompt">请填写申请改派信息：</string>
+    <string name="application_to_send_call_task">申请改派</string>
+    <string name="change_reason_txt">改派原因</string>
+    <string name="to_deal_with_title">到达处理</string>
+    <string name="to_deal_with_prompt">请填写到达处理信息：</string>
+    <string name="curr_address">当前地址：</string>
+    <string name="the_application_case_title">申请撤案</string>
+    <string name="the_application_case_prompt">请填写申请撤案信息：</string>
+    <string name="the_application_case_reason">撤案原因</string>
+    <string name="the_application_case">撤案申请</string>
+    <string name="maintenance_tasks_title">定损任务完成</string>
+    <string name="maintenance_tasks_prompt">请填写定损任务完成信息：</string>
+    <string name="maintenance_tasks_reason">定损备注</string>
+    <string name="maintenance_tasks">完成定损任务</string>
+    <string name="project_title">项目</string>
+    <string name="selected_item">选项</string>
+    <string name="submit_btn">提交</string>
+    <string name="open_label">打开蓝牙</string>
+    <string name="close_label">关闭蓝牙</string>
+    <string name="barcode_label">条形码</string>
+    <string name="card_lebel">CARD</string>
+    <string name="cardcancel_lebel">CardCancel</string>
+    <string name="print_lebel">打印</string>
+    <string name="finish_label">完成</string>
+    <string name="scanning">请选择蓝牙设备</string>
+    <string name="select_device">请选择连接蓝牙设置</string>
+    <string name="none_paired">没有配对的设备</string>
+    <string name="none_found">没有找到设备</string>
+    <string name="title_paired_devices">配对的设备</string>
+    <string name="title_other_devices">其它设备</string>
+    <string name="button_scan">查找设备</string>
+    <string name="connected">connected to a device</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected： </string>
+    <string name="title_not_connected">not connected</string>
+    <string name="che_protocol">Protocol</string>
+    <!-- 定损基本信息 -->
+    <string name="loss_basic">定损基本信息</string>
+    <string name="registNo">报案号：</string>
+    <string name="taskId">理赔工作流任务ID</string>
+    <string name="subrogationFlag">代位求偿标志：</string>
+    <string name="claimSignFlag">索赔申请书标志：</string>
+    <string name="cetainLossType">定损方式：</string>
+    <string name="repairFactoryCode">修理厂名称：</string>
+    <string name="repairFactoryType">修理厂类型：</string>
+    <string name="defLossDate">定损日期：</string>
+    <string name="defSite">定损地点：</string>
+    <string name="sendDate">送修时间：</string>
+    <string name="lossLevel">损失程度：</string>
+    <string name="handlerCode">定损员：</string>
+    <string name="estimatedDate">修理完毕日期：</string>
+    <string name="caseFlag">互碰自赔标志：</string>
+    <string name="lossPart">损失部位：</string>
+    <string name="damagePurchasePrice">出险新车购置价：</string>
+    <string name="intermediaryFlag">定损类别：</string>
+    <string name="intermediaryCode">公估公司代码：</string>
+    <string name="intermediaryName">公估公司名称：</string>
+    <string name="damageDate">出险时间：</string>
+    <string name="lossOption">定损意见：</string>
+    <!-- 银行基本信息 -->
+    <string name="bank_title">7</string>
+    <string name="bank_province">开户行省份：</string>
+    <string name="bank_city">开户行城市：</string>
+    <string name="bank_accountsName">银行账户：</string>
+    <string name="bank_accounts">银行账号：</string>
+    <string name="bank_bankName">银行开户行：</string>
+    <string name="bank_bankType">银行类型：</string>
+    <string name="bank_bankOutlets">银行网点：</string>
+    <string name="bank_bankNumber">银行号：</string>
+    <string name="bank_mobile">电话号码：</string>
+    <string name="bank_cityFlag">是否同城：</string>
+    <string name="bank_priorityFlag">转账汇款模式：</string>
+    <string name="bank_purpose">用途：</string>
+    <!-- 定损车辆信息 -->
+    <string name="lossVehicleInfo">定损车辆信息</string>
+    <string name="licenseNo">车牌号：</string>
+    <string name="defLossCarType">损失方：</string>
+    <string name="lossType">损失类型：</string>
+    <string name="carOwner">车主：</string>
+    <string name="enrollDate">初登日期：</string>
+    <string name="carKindCode">车辆种类：</string>
+    <string name="frameNo">车架号：</string>
+    <string name="licenseColorCode">号牌底色：</string>
+    <string name="modelCode">车型代码：</string>
+    <string name="vinNo">VIN码：</string>
+    <string name="licenseType">车牌种类：</string>
+    <string name="brandName">车型名称：</string>
+    <string name="gearboxType">变速箱：</string>
+    <string name="gasType">燃料类型：</string>
+    <string name="carKindFrom">车型产地：</string>
+    <string name="engineNo">发动机号：</string>
+    <string name="insureComCode">承保公司：</string>
+    <string name="indemDutyCi">交强险责任类型：</string>
+    <string name="indemnityDuty">商业险赔偿责任：</string>
+    <string name="indemnityDutyRate">商业险赔偿责任比例：</string>
+    <!-- 车辆承保信息 -->
+    <string name="policyFlag">保单交强/商业标志：</string>
+    <string name="oppRegistNoBi">商业险报案号：</string>
+    <string name="oppPolicyNoBi">商业险保单号：</string>
+    <string name="oppInsurerCodeBi">商业险承保机构：</string>
+    <string name="oppInsurerAreaBi">商业险承保地区：</string>
+    <string name="oppRegistNoCi">交强险报案号：</string>
+    <string name="oppPolicyNoCi">交强险保单号：</string>
+    <string name="oppInsurerCodeCi">交强险承保机构：</string>
+    <string name="oppInsurerAreaCi">交强险承保地区：</string>
+    <!-- 车辆基本信息 -->
+    <string name="vehicle_basic_info">基本信息</string>
+    <string name="caseNo">事故号码：</string>
+    <string name="lossNo">损失项目编号</string>
+    <string name="vehKindCode">定损车辆种类代码：</string>
+    <string name="vehKindName">车辆种类：</string>
+    <string name="vehCertainCode">定损车型编码：</string>
+    <string name="vehCertainName">定损车型名称：</string>
+    <string name="vehSeriCode">定损车系编码：</string>
+    <string name="vehSeriName">定损车系：</string>
+    <string name="vehYearType">初次登记日期：</string>
+    <string name="vehFactoryCode">厂家编码：</string>
+    <string name="vehFactoryName">厂家：</string>
+    <string name="vehBrandCode">品牌编码：</string>
+    <string name="vehBrandName">品  牌：</string>
+    <string name="plateNo">车牌号码：</string>
+    <string name="selfConfigFlag">自定义车型标志：</string>
+    <string name="version">版本号：</string>
+    <string name="remark">备注：</string>
+    <string name="vehGroupCode">定损车组代码：</string>
+    <string name="vehGroupName">定损车组：</string>
+    <string name="sumChgCompFee">合计换件金额：</string>
+    <string name="sumRepairFee">合计修理金额：</string>
+    <string name="sumMaterialFee">合计辅料费：</string>
+    <string name="sumLossFee">定损合计金额：</string>
+    <string name="addLossVehicleInsur">新增车辆承保信息</string>
+    <string name="vehicleTypeSreachTitle">车辆定型查询</string>
+    <string name="vehicleTypeListTitle">车辆定型信息</string>
+    <string name="inputVehicleTypeSreach">车辆定型查询信息</string>
+    <!-- 车辆定型 -->
+    <string name="modelName">厂商名称</string>
+    <string name="tradeName">车型名称</string>
+    <string name="carName">车系名称</string>
+    <string name="categoryName">种类名称</string>
+    <string name="seat">座位：</string>
+    <string name="price">价格</string>
+    <string name="volume">排量</string>
+    <string name="description">描述说明：</string>
+    <string name="modelYear">年款：</string>
+    <!-- 定损换件 -->
+    <string name="loss_Change_Info">4</string>
+    <string name="lossChangeQueryTitle">换件查询</string>
+    <string name="inputLossChangeQueryTitle">换件查询条件</string>
+    <string name="replacementParts">更换部位：</string>
+    <string name="partsGrouping">零件分组名称：</string>
+    <string name="partType">零件类型：</string>
+    <string name="partName">零件名称：</string>
+    <string name="keywords">关  键  字：</string>
+    <string name="surveyQuotedPrice">查勘报价：</string>
+    <string name="modifyFactoryPrice">修理厂价格：</string>
+    <string name="count">数量：</string>
+    <string name="insur">险别：</string>
+    <string name="lossOfMoreThan">是否损余：</string>
+    <string name="salvage">残值：</string>
+    <string name="pricePlan">价格方案：</string>
+    <string name="factoryPartsNumber">原厂零件编号</string>
+    <string name="factoryPartsName">原厂零件名称：</string>
+    <string name="localhostPrice">本地价：</string>
+    <string name="systemPrice">系统价：</string>
+    <string name="upPage">上一页</string>
+    <string name="downPage">下一页</string>
+    <string name="hint_searchParts">请输入零件名称</string>
+    <!-- 维修项目清单 -->
+    <string name="loss_fixing_info">5</string>
+    <string name="loss_change_modfiy_list_title"/>
+    <string name="inputLossRepairQueryTitle">请输入维修查询条件：</string>
+    <string name="replacementProject">项目</string>
+    <string name="updateBtn">修改</string>
+    <string name="deleteBtn">删除</string>
+    <string name="lossRepairQueryTitle">维修查询</string>
+    <string name="professionType">工种类型：</string>
+    <string name="professionName">工种名称：</string>
+    <string name="repairName">修理名称：</string>
+    <string name="repairNumber">修理编码：</string>
+    <string name="professionCode">工种代码：</string>
+    <string name="repairWorkeHours">维修工时：</string>
+    <string name="workeHoursFee">工时费率：</string>
+    <string name="repairMoney">维修金额：</string>
+    <string name="takepic_btn_string">拍照</string>
+    <string name="confirm_btn_string">确认</string>
+    <string name="reset_btn_string">重拍</string>
+    <string name="backbtn_string">返回</string>
+    <string name="light1_string">打开闪关灯</string>
+    <string name="light2_string">关闭闪关灯</string>
+    <string name="c_1_20"/>
+    <string name="message"/>
+    <string name="idcard"/>
+    <string name="imgview"/>
+    <string name="distinguish">正在识别中......</string>
+    <string name="cut_image">正在裁剪中......</string>
+    <!-- 辅料信息 -->
+    <string name="auxiliary_info">6</string>
+    <!-- 任务提交 -->
+    <string name="task_submit">8</string>
+</resources>

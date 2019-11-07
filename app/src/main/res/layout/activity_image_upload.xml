@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <RelativeLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#555555"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/caseCenterTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="本地图片上传"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sm_loss_retun_back"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+        
+        <Button
+            android:id="@+id/uploadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sm_loss_btn"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.0"
+            android:background="#636363"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="文件目录"
+                android:textColor="#ffffff"
+                android:textSize="20dip" />
+
+            <ListView
+                android:id="@+id/dirListLv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/media_left_bg"
+                android:cacheColorHint="#00000000"
+                android:paddingRight="3dp"
+                android:divider="@drawable/media_divider" >
+            </ListView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/media_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/titleDirLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/homeDirBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="根目录" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/currDirLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <GridView
+                        android:id="@+id/imageGv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:horizontalSpacing="15dp"
+                        android:numColumns="4"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="15dp" >
+                    </GridView>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+<RelativeLayout
+        android:id="@+id/image_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    
+</RelativeLayout>
+</LinearLayout>

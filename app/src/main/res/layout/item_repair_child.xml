@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_child_bg"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" >
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/workeHoursFee" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/workeHoursFeeTxt"
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/insur" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/insurTxt"
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginLeft="20dip"
+                android:text="@string/remark" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/remarkTxt"
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

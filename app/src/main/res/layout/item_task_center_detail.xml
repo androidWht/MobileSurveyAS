@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_child_bg"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:padding="10dip"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="报  案  号：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_detail_report_no"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="G1" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="任务类型：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_detail_task_type"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="查勘任务" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="报  案  人：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_detail_reporter"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="小郑" >
+            </TextView>
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:visibility="gone"
+            android:id="@+id/table_policy_reporter">
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="被保险人：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_policy_reporter"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="小爽" >
+            </TextView>
+        </TableRow>  
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:visibility="gone"
+            android:id="@+id/table_policy_money">
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="保险金额：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_Money"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="小爽" >
+            </TextView>
+        </TableRow>  
+        
+        
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:visibility="gone"
+            android:id="@+id/table_policy_back">
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="退        回：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_reBack"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="未处理" >
+            </TextView>
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:visibility="gone"
+            android:id="@+id/table_policy_backReason">
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="退回说明：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_reBackReason"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="未处理" >
+            </TextView>
+        </TableRow>
+        
+        
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="出险地点：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_detail_accident_addr"
+                style="@style/task_item_content_style"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:text="" >
+            </TextView>
+
+            <TextView>
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="状        态：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_detail_status"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="未处理" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="出险原因：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_detail_accident_reason"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="酒驾" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="出险时间：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_detail_accident_time"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2012-12-1 8：30" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="联系电话：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_detail_phone"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="15976384273" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/task_item_title_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="报案时间：" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/task_detail_report_time"
+                style="@style/task_item_content_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2012-12-1 9：00" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/convertPcBtn"
+        android:layout_width="90dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/sm_loss_btn"
+        android:focusable="false"
+        android:text="转电脑处理"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

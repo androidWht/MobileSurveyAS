@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_item_bg_nomal"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/item_topview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/personLostRisk"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dip"
+                android:layout_weight="1"
+                android:text="险别" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/personLostName"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dip"
+                android:text="费用名称" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/btnLayout"
+                android:gravity="left"
+                android:layout_toLeftOf="@+id/btnLayout"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/personLostMoeny"
+                    style="@style/new_item_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="损失金额"
+                    android:textSize="12dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/personLostDesc"
+                    style="@style/new_item_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="损失程序描述"
+                    android:textSize="12dip" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/removeBtn"
+                    style="@style/new_item_button"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/sm_loss_btn"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/detail_item_view"
+        layout="@layout/item_task_center_detail" />
+
+</LinearLayout>

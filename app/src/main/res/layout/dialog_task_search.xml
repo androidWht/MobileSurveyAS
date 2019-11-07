@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/searchdialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="请输入报案号后几位数字:"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/registNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|center_vertical" >
+
+            <Button
+                android:id="@+id/number1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="1"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/number2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="2"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/number3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/number4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="4"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|center_vertical" >
+
+            <Button
+                android:id="@+id/number5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="5"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/number6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="6"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/number7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="7"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/number8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="8"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/number9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="9"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/number0"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="X"
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="X"
+                android:textColor="#ff0000"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="任务类型："
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/taskRadioGroup1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="任务类型"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/chakan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="0"
+                android:text="查勘任务"
+                android:textColor="#000000" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/dingsun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:tag="1"
+                android:text="定损任务"
+                android:textColor="#000000" >
+            </RadioButton>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/taskRadioGroup2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="任务类型"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/retreatLoss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="3"
+                android:text="核损退回"
+                android:textColor="#000000" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/privateSurvey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:tag="4"
+                android:text="司内查勘"
+                android:textColor="#000000" >
+            </RadioButton>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/taskRadioGroup3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="任务类型"
+            android:orientation="horizontal" >
+            
+            <RadioButton
+                android:id="@+id/retreatCountLoss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="5"
+                android:text="理算退回"
+                android:textColor="#000000" >
+            </RadioButton>
+            
+            <RadioButton
+                android:id="@+id/alltask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_weight="1"
+                android:tag="90"
+                android:text="全部"
+                android:textColor="#000000" >
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="任务状态："
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dip"
+            android:contentDescription="状态"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/norecieve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="0"
+                android:text="未接收"
+                android:textColor="#000000" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/comeround"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="4"
+                android:text="到达"
+                android:textColor="#000000" >
+            </RadioButton>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dip"
+            android:contentDescription="状态"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/reassign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="2"
+                android:text="改派"
+                android:textColor="#000000" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/allstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:tag="50"
+                android:text="全部"
+                android:textColor="#000000" >
+            </RadioButton>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/query_result"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sm_loss_btn"
+            android:text="查询结果"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/query_all"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/sm_loss_btn"
+            android:text="查看全部"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/query_btn"
+                android:layout_width="80dip"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/sm_loss_btn"
+                android:text="查询结果"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/all_result"
+                android:layout_width="80dip"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/sm_loss_btn"
+                android:text="查看全部"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="80dip"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/sm_loss_btn"
+                android:text="取 消"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <!-- title layout start -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#555555"
+        android:gravity="center_vertical"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/treatmentBrackBtn"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/sm_loss_retun_back" />
+
+        <TextView
+            android:id="@+id/caseCenterTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="@string/survey_treatment"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </RelativeLayout>
+    <!-- title layout end -->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_survey_basic_info" />
+
+            <include layout="@layout/layout_survey_car_info" />
+
+            <include layout="@layout/layout_survey_liability_ratio_info" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                layout="@layout/layout_survey_prop_damage" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

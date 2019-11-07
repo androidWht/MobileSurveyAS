@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_item_bg_nomal"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/item_topview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/task_report_no"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="G1" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/licenseNoTxt"
+                style="@style/new_item_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="70dp"
+                android:text="粤AE8607"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/btnLayout"
+                android:gravity="left|center"
+                android:layout_toLeftOf="@+id/btnLayout"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/task_taskType"
+                    style="@style/new_item_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="查勘任务"
+                    android:textSize="12dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/task_status"
+                    style="@style/new_item_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:gravity="center"
+                    android:text="未处理"
+                    android:textSize="12dip" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/viewBtn"
+                    style="@style/new_item_button"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/sm_loss_btn"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="处理"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/refuseBtn"
+                    style="@style/new_item_button"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/sm_loss_btn"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="拒绝"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/accpetBtn"
+                    style="@style/new_item_button"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/sm_loss_btn"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="接收"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/taskProgressBtn"
+                    style="@style/new_item_button"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/sm_loss_btn"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="进度"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/detail_item_view"
+        layout="@layout/item_task_center_detail" />
+
+</LinearLayout>

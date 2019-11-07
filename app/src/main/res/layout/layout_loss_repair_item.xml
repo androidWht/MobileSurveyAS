@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <!-- title layout start -->
+
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#555555" 
+        android:visibility="gone">
+		<Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sm_loss_retun_back"
+            android:padding="5dip"
+            android:text="@string/back"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/caseCenterTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="6dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="修理项目清单"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <!-- title layout end -->
+
+
+    <!-- lossChangeModfiyList layout start -->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tableRow1"
+        android:layout_gravity="center"
+        android:padding="5dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:padding="10dip"
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/new_list_title"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/task_list_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="维修名称" />
+
+                <TextView
+                    android:visibility="gone"
+                    style="@style/task_list_tab_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="工种代码" />
+				<TextView
+				    android:visibility="gone"
+                    style="@style/task_list_tab_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="维修工时" />
+                <TextView
+                    style="@style/task_list_tab_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="维修金额" />
+
+                <TextView
+                    android:visibility="gone"
+                    style="@style/task_list_tab_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/option" />
+            </LinearLayout>
+
+            <ExpandableListView
+                android:id="@+id/lossRepairModfiyList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#FFCC00"
+                android:fadingEdge="none"
+                android:groupIndicator="@null" />
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                 android:layout_below="@+id/lossRepairModfiyList"
+         
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+             
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/addBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/sm_loss_middle_btn"
+                    android:padding="5dip"
+                    android:text="新增修理信息"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- caseList layout end -->
+
+
+    
+
+</RelativeLayout>

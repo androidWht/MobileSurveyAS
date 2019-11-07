@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <!-- 解决键盘弹出问题 -->
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!-- title layout start -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#555555"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:padding="5dp"
+                    android:text="修理项目修改"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <!-- title layout end -->
+
+
+            <!-- body layout start -->
+
+            <LinearLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_title"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_gravity="center_vertical"
+                        android:text="修理名称:"
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/repairNameSp"
+                        style="@style/sm_spinner_style"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:layout_gravity="center_vertical"
+                        android:text="维修工时:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/repairWorkeHoursExt"
+                        style="@style/edit_text_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dip"
+                        android:ems="10"
+                        android:maxLength="10"
+                        android:numeric="decimal"
+                        android:textSize="16sp" >
+
+                       <!--  <Spinner
+                            android:id="@+id/repairWorkeHoursSp"
+                            style="@style/sm_spinner_style"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dip" /> -->
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" 
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/text_style"
+                        android:text="工时费率:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/workeHoursFeeExt"
+                        style="@style/edit_text_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dip"
+                        android:ems="10"
+                        android:maxLength="10"
+                        android:numeric="decimal"
+                        android:textSize="16sp" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:text="维修金额:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/repairMoneyExt"
+                        style="@style/edit_text_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dip"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:maxLength="10"
+                        android:numeric="decimal"
+                        android:textSize="16sp" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/text_style"
+                        android:text="备注:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/remarkExt"
+                        style="@style/edit_text_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dip"
+                        android:ems="10"
+                        android:singleLine="true"
+                        android:textSize="16sp" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/selectOptionBtn"
+                        android:layout_width="100dip"
+                        android:layout_height="37dip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/sm_loss_btn"
+                        android:text="选  择"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dip" />
+
+                    <Button
+                        android:id="@+id/localFeedbackBtn"
+                        android:layout_width="100dip"
+                        android:layout_height="37dip"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/sm_loss_btn"
+                        android:text="自定义"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- body layout end -->
+
+
+    <!-- footer layout start -->
+
+    <LinearLayout
+        android:id="@+id/loss_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="保存数据"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <!-- footer layout end -->
+
+</RelativeLayout>

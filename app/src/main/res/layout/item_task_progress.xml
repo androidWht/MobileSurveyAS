@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_item_bg_nomal"
+    android:gravity="center_vertical"
+    android:padding="10dip"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/registNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="报案号"
+        style="@style/new_item_group"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/taskId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text="任务ID"
+        style="@style/new_item_group"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/nodeCName"
+        style="@style/new_item_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text="当前进度"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="状态"
+        style="@style/new_item_group"
+        android:textColor="#000000" />
+
+</LinearLayout>

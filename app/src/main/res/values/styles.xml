@@ -1,0 +1,585 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="Theme_ShareDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/filled_box</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="edit_save_day_style" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/picture_local_save_day</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+    <!-- task -->
+    <style name="task_item_title_style">
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">16dip</item>
+    </style>
+
+    <style name="task_item_content_style">
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">16dip</item>
+    </style>
+    <!-- task -->
+
+
+    <!-- main.xml style start -->
+    <style name="main_font_color">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="center_horizontal">
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="main_typeface">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/welcome_textSize</item>
+    </style>
+    <!-- main.xml style end -->
+
+
+    <!-- login.xml style start -->
+    <style name="login_edit">
+        <item name="android:background">@drawable/new_login_edit_text</item>
+        <item name="android:imeOptions">flagNoExtractUi|actionNext</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:textSize">@dimen/login_textSize</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">32</item>
+    </style>
+
+    <style name="new_login_row">
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">15dip</item>
+        <item name="android:paddingTop">@dimen/login_row_padding</item>
+        <item name="android:paddingBottom">1dip</item>
+    </style>
+
+    <!-- login.xml style end -->
+
+
+    <!-- task_center.xml style start -->
+    <style name="task_tab">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_margin">0.25dp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="task_list_tab">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_margin">0dip</item>
+    </style>
+
+    <style name="task_list_tab_2" parent="task_list_tab">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="new_item_group">
+        <item name="android:textSize">16dip</item>
+    </style>
+    
+     <style name="new_item_prop">
+        <item name="android:textSize">20dip</item>
+    </style>   
+
+    <style name="new_item_field">
+        <item name="android:textSize">16dip</item>
+    </style>
+
+    <style name="new_item_button">
+        <item name="android:layout_width">50dip</item>
+        <item name="android:layout_height">30dip</item>
+    </style>
+
+    <style name="child_item">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18dip</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_marginBottom">2dip</item>
+    </style>
+    <!-- task_center.xml style end -->
+
+
+    <!-- custom complate start -->
+    <style name="MCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/checkbox_text_color</item>
+        <item name="android:minEms">4</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:button">@drawable/new_login_check</item>
+    </style>
+    <!-- spinner -->
+    <style name="spinner_style">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:textColor">#00ff0000</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+    <style name="spinner_style_modify">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+    <style name="sm_spinner1_style">
+        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">#00000000</item>
+        <item name="android:background">@drawable/spinner</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+    <style name="login_spinner1_style">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">#00000000</item>
+        <item name="android:background">@drawable/spinner</item>
+        <item name="android:paddingLeft">4dip</item>
+    </style>
+
+    <style name="edit_text_style" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+    <style name="dialog_sreach_style" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/dialog_sreach_input</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+    <style name="square_edit_style" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/square_edit_bg</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+    <style name="main_tab_bottom_bg">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:paddingBottom">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_margin">2dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:background">@drawable/main_item_btn_click</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="sm_loss_main_tab_bottom_bg">
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#080808</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <!-- custom complate end -->
+
+
+    <!-- accept_task_layout.xml  start -->
+    <style name="accept_task_title">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">25dip</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <style name="accept_task_content">
+        <item name="android:textSize">16dip</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <style name="accept_task_edit">
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- accept_task_layout.xml end -->
+
+
+    <!-- refuse_task_layout.xml  start -->
+    <style name="refuse_task_title">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">25dip</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="refuse_task_content">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="refuse_task_edit">
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:editable">false</item>
+    </style>
+
+    <style name="new_enable_refuse_task_edit">
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:editable">true</item>
+    </style>
+
+    <style name="new_refuse_task_edit">
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:editable">false</item>
+    </style>
+
+    <style name="refuse_task_edit2">
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:textSize">23dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- refuse_task_layout.xml end -->
+
+    <style name="report_info_title">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">5dip</item>
+    </style>
+
+    <style name="report_info_content">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <!-- end -->
+
+
+    <!-- basic_info.xml start -->
+    <style name="basic_tab_row">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <style name="basic_sub_txt">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <!-- basic_info.xml end -->
+    <style name="basic_info_tablerow">
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="basic_info_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textColor">@color/flied_name</item>
+    </style>
+
+    <style name="new_basic_info_title">
+        <item name="android:layout_width">130dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:textColor">@color/flied_name</item>
+    </style>
+
+    <style name="basic_info_spinner_style">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:textColor">#00ff0000</item>
+        <item name="android:padding">3dip</item>
+    </style>
+
+    <style name="basic_info_content" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        
+    </style>
+    
+    <style
+        	name="basic_info_content1"
+        	parent="@android:style/Widget.EditText"
+        >
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:digits">qwertyuiopasdfghjklzxcvbnm0123456789QWERTYUIOPASDFGHJKLZXCVBNM</item>
+    </style>
+
+    <style name="basic_flied_name">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:textColor">@color/flied_name</item>
+    </style>
+
+    <style name="basic_flied_name1">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:textColor">@color/flied_name</item>
+    </style>
+
+    <style name="basic_flied_name_2">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/flied_name</item>
+    </style>
+
+    <style name="basic_flied_name_3">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/flied_name</item>
+    </style>
+
+    <style name="basic_flied_name4">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">16dip</item>
+        <item name="android:textColor">@color/flied_name</item>
+    </style>
+
+    <!-- insurance_info_detail_layout.xml -->
+
+    <style name="insurance_info_detail_title">
+        <item name="android:textSize">18dip</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="insurance_info_detail_content">
+        <item name="android:textColor">@color/flied_name</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!-- <style name="AppTheme" parent="android:Theme.Light" /> -->
+
+    <style name="flied_title_name">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/flied_name</item>
+    </style>
+
+    <style name="text_style">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/flied_name</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text_flied">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/flied_name</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="edit_input_style" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+    <style name="spinner_select_style">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textColor">#00000000</item>
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+    <style name="sm_spinner_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">#00000000</item>
+        <item name="android:background">@drawable/spinner</item>
+    </style>
+
+    <style name="bank_info_text">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/flied_name</item>
+    </style>
+
+    <style name="loss_spinner_style">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textColor">#00000000</item>
+        <item name="android:background">@drawable/spinner</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+    <style name="loss_spinner_style2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textColor">#00000000</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@drawable/spinner</item>
+    </style>
+
+
+    <style name="media_item_style">
+        <item name="android:padding">1dip</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="bottom_btn_style">
+        <item name="android:background">#00000000</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:padding">10dip</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="sm_loss_bottom_btn_style">
+        <item name="android:background">#00000000</item>
+        <item name="android:textColor">#0000EE</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--
+    <style name="dialog" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    -->
+
+
+    <!-- sm_survey_add_vechicle.xml end -->
+    <style name="sm_row">
+        <item name="android:padding">5dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="sm_layout1">
+        <item name="android:padding">5dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="sm_field_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/flied_name</item>
+        <item name="android:paddingLeft">10dip</item>
+    </style>
+
+    <style name="sm_field_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/flied_name</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+    
+    <style name="SeekBar_Horizontal" parent="@android:style/Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:thumb">@drawable/seekbar_thumb</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxHeight">30dp</item>
+        <item name="android:thumbOffset">0dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+
+</resources>

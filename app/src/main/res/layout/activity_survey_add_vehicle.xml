@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9" >
+
+    <!-- 解决键盘弹出问题 -->
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#555555"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/caseCenterTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="涉案车辆信息"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginBottom="20dip"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="20dp"
+                    android:text="基本信息"
+                    android:textColor="#080808"
+                    android:textSize="16dip" />
+
+                <LinearLayout
+                    style="@style/sm_layout1" >
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="损失类别:  "
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/loss_typeSp"
+                        style="@style/sm_spinner_style"
+                        android:layout_width="fill_parent" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1" >
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="车牌号:  "
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/dangerPlaceExt"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:weightSum="1" >
+                    </EditText>
+                </LinearLayout>
+                
+                <LinearLayout style="@style/sm_layout1" 
+                    android:id="@+id/engine_number_line" >
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="@string/engine_number"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/engineNumber"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:weightSum="1" >
+
+                    </EditText>
+                </LinearLayout>
+                
+                <LinearLayout style="@style/sm_layout1" >
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="@string/frame_number" 
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/frameNumber"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:weightSum="1" >
+                    </EditText>
+                </LinearLayout>                
+                
+
+                <LinearLayout style="@style/sm_layout1" 
+                    android:visibility="gone"
+                    android:gravity="right">
+
+                    <Button
+                        android:id="@+id/idcardBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:background="@drawable/sm_loss_btn"
+                        android:text="  拍照识别  "
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dip" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1" >
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="车主:  "
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/the_ownerEdt"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:weightSum="1" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1" >
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="号牌种类:  "
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/number_plate_typeSp"
+                        android:layout_width="fill_parent"
+                        style="@style/sm_spinner_style" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/sm_layout1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="交强险责任类型:   " />
+
+                    <Spinner
+                        android:id="@+id/strong_typeSp"
+                        style="@style/sm_spinner_style" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/loss_detail_title"
+                    android:textColor="#080808"
+                    android:textSize="16dip" />
+
+                <LinearLayout style="@style/sm_layout1" >
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:layout_height="40dip"
+                        android:text="损失情况:  "
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/loss_situationSp"
+                        android:layout_width="fill_parent"
+                        style="@style/sm_spinner_style" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1" >
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="估损金额:  "
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/estimated_loss_amountExt"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:numeric="decimal"
+                        android:weightSum="1" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/new_basic_info_title"
+                        android:text="车辆损失险别:  "
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/car_KindCodeSp"
+                        android:layout_width="fill_parent"
+                        style="@style/sm_spinner_style" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1" >
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="商业险赔偿责任:  "
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:layout_width="fill_parent"
+                        android:id="@+id/lindemnityDutySp"
+                        style="@style/sm_spinner_style" />
+                    
+                    <EditText
+
+                        android:id="@+id/indemintyDutydate"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:hint="请输入百分比"
+                        android:textSize="16sp"
+                        android:numeric="decimal"
+                        android:visibility="gone"
+                        android:weightSum="1" >
+                    </EditText>                    
+                    
+                    
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="20dp"
+                    android:text="驾驶员信息"
+                    android:textColor="#080808"
+                    android:textSize="16dip" />
+
+                <LinearLayout style="@style/sm_layout1" >
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="姓名:  "
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/nameExt"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:weightSum="1" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1" 
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="证件类型:  "
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/documentTypeSp"
+                        android:layout_width="fill_parent"
+                        style="@style/sm_spinner_style" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1"
+                    android:visibility="gone"
+                    android:gravity="right" >
+
+
+                    <Button
+                        android:id="@+id/IDBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/sm_loss_btn"
+                        android:text="  拍照识别  "
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="证件号码:  "
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/certificates_numberExt"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:numeric="integer"
+                        android:weightSum="1" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1" >
+
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="驾驶证号:  "
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/driverNoExt"
+                        style="@style/basic_info_content1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:textSize="16sp"
+                       
+                        android:weightSum="1" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1" 
+                    android:gravity="right">
+
+
+                    <Button
+                        android:id="@+id/autoNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/sm_loss_delete_btn"
+                        android:text="  随机填充  "
+            			android:visibility="gone"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/saveCarBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/backCarBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

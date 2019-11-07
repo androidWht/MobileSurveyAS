@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_item_bg_nomal"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:textSize="16dip"
+            android:id="@+id/nameTxt"
+            style="@style/new_item_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_group"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="项目编码："
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/codeTxt"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_group"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="单价："
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/priceTxt"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_group"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="数量："
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/countTxt"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_group"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="金额："
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/moneyTxt"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_group"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="险别：" />
+
+            <TextView
+                android:id="@+id/insurTxt"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

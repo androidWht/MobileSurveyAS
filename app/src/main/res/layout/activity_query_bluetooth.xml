@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <!-- title layout start -->
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#555555" >
+
+        <TextView
+            android:id="@+id/caseCenterTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="查勘定损打印凭证"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/printBtnBack"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/sm_loss_retun_back"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+    <!-- title layout end -->
+
+    <ScrollView
+        android:layout_width="300dip"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/topLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/print_bg"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="300dip"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/caseInfoTxt"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:padding="20dip"
+                android:text="" 
+				android:visibility="visible"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/printBtn"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sm_loss_btn2"
+            android:text="确认"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <!-- head start -->
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#555555"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/caseCenterTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/vehicleTypeListTitle"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <!-- head end -->
+
+
+    <!-- body start -->
+
+    <LinearLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vehicle_btn_layout"
+        android:layout_below="@+id/layout_title"
+        android:orientation="vertical"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/tableRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/new_list_title"
+            android:padding="10dip" >
+
+            <TextView
+                style="@style/task_list_tab_2"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/tradeName" />
+
+            <TextView
+                style="@style/task_list_tab_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="center"
+                android:text="@string/modelName"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/task_list_tab_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/carName"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/task_list_tab_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/categoryName"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/task_list_tab_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/price"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/task_list_tab_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/volume" />
+
+            <TextView
+                style="@style/task_list_tab_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="操作"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/lossVehicleList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dip"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:groupIndicator="@null" />
+    </LinearLayout>
+    <!-- footer layout start -->
+
+    <LinearLayout
+        android:id="@+id/vehicle_btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/sm_loss_middle_btn"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="返 回"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <!-- footer layout end -->
+
+</RelativeLayout>

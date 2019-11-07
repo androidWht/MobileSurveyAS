@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 欢迎界面 start -->
+       <dimen name="welcome_textSize">16sp</dimen><!-- 文字大小 -->
+        <dimen name="welcome_textPaddingTop">30dip</dimen><!-- 文字大小 -->
+    <!-- 欢迎界面  end-->
+    
+    
+    
+    
+   <!-- 登陆界面 start-->
+      <dimen name="login_edit_bg_paddingLeft">10dip</dimen><!-- 图片偏移位置 -->
+      <dimen name="login_textSize">15sp</dimen><!-- 字体大小 -->
+      <dimen name="login_row_padding">10dip</dimen><!-- 间隔 -->
+      <dimen name="login_layout_padding">50dip</dimen><!-- 间隔 -->
+      <dimen name="login_padding">15dip</dimen><!-- 间隔 -->
+      <dimen name="login_btn_paddingTop">1dip</dimen>
+    <!-- 登陆界面 end -->
+    
+    <!-- 主界面 start-->
+       <dimen name="main_menu_title_size">15sp</dimen><!-- 菜单字体大小 -->
+       <dimen name="main_menu_title_paddingTop">10dip</dimen><!-- 文字与图标距离 -->
+       
+    <!-- 主界面 end-->
+    
+    <!-- 系统设置界面 start -->
+    <dimen name="setting_textSize">12sp</dimen><!-- 字体大小 -->
+    <!-- 系统设置界面 end -->
+    
+    <!-- 案件中心界面 start -->
+    <dimen name="tastCenter_textSize">12sp</dimen><!-- 字体大小 -->
+    <dimen name="tab_textSize">16sp</dimen><!-- 字体大小 -->
+    <dimen name="tab_item_textSize">15sp</dimen><!-- 字体大小 -->
+    <!--  案件中心界面 end -->
+    
+    
+    
+    
+    
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="login_edit_width">1024dip</dimen>
+
+</resources>

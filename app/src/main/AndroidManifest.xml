@@ -1,0 +1,348 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sinosoft.ms"
+    android:versionCode="1"
+    android:versionName="V2.3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.APPROPRIATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA_EXTENDED" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 清除缓存 -->
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 取得手机 imei 号 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 系统设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+   
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <!-- android:name=".utils.CrashApplication" -->
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/title_activity_main"
+        android:theme="@style/AppTheme" >
+        <!-- <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="1bceaaea699c3e16e36e933711f39174" /> -->
+        <!-- MainActivity -->
+        <activity
+            android:name="com.sinosoft.ms.activity.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.LoginAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.claimsassessment.ClaimsAssessmentAct"
+            >
+            </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.MainMeunAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.confirmdamage.ConfirmDamageAct"
+            >
+            </activity>
+
+        <!-- 系统设置 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.setting.SystemSettingAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 任务中心 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.TaskCenterAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 任务中心 接收任务 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.AcceptTaskAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 任务中心 归档任务 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.ArchiveTaskAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 任务中心 到达处理任务 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.ArrivalProcessingAct"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 任务中心 改派任务 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.ReassignmentTaskAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 任务中心 拒绝任务 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.RefuseTaskAct"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- 任务中心 查勘处理 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.survey.SurveyAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.survey.SurveyAddVehicleAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.survey.SurveyAddPropAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>  
+        <activity
+            android:name="com.sinosoft.ms.activity.task.survey.SurveyAddPersonAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>  
+        
+        
+        
+        <activity
+            android:name="com.sinosoft.ms.activity.task.survey.SurveyGeneralAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- 任务中心 定损处理 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.LossGeneralAct"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.LossMenuAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 修改后的定损主页 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.lossSimple.LossViewPager"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 定损处理 车辆处理 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.vehicle.VehicleTypeQueryAct"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.vehicle.VehicleTypeListAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 定损处理 换件信息 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.change.ChangeQueryAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.change.ChangeQueryListAct"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.change.ChangeProjectModfiyAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.change.ChangeProjectdefineAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 定损处理 维修信息 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.repair.RepairAddAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 定损处理 辅料信息 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.assist.AssistQueryListAct"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.assist.AssistModfiyAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.loss.assist.AssistDefineAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 任务中心 图像处理 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.image.MediaCenterAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.task.image.camera.CameraActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 任务中心 图像处理 图片预览 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.image.PictureGalleryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 任务中心 图像处理 图片本地上传 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.image.UploadImageActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <!-- 任务中心 图像处理 查看查勘图片 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.task.image.SurveyPictureExamineActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <!-- 数据查询 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.query.DataSreachListAct"
+            android:screenOrientation="portrait" />
+        <!-- 数据查询 进度 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.query.TaskProgressAct"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <!-- 数据查询 详情 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.query.SurveyDetailsAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.query.LossDetailsAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 数据查询 蓝牙打印 -->
+        <activity
+            android:name="com.sinosoft.ms.activity.query.BluetoothActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.sinosoft.ms.activity.query.WoosimPrinterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <!-- 后台定时服务 -->
+
+        <service
+            android:name="com.sinosoft.ms.service.impl.BackstageServices"
+            android:enabled="true" />
+        <service
+            android:name="com.sinosoft.ms.service.impl.ImageUploadService"
+            android:enabled="true" />
+        <service
+            android:name="com.sinosoft.ms.service.impl.DownLoadService"
+            android:enabled="true" />
+
+        <!-- 轮询任务广播服务 -->
+        <receiver android:name="com.sinosoft.ms.service.impl.PollingReceiver" >
+            <intent-filter>
+                <action android:name="com.sinosoft.ms.receiver.PollingReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sinosoft.ms.service.impl.NetWorkStateReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.sinosoft.ms.activity.task.ImageScaleActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <!-- 定位服务 -->
+        <!-- 网络定位 -->
+        <service android:name="com.sinosoft.ms.utils.LocationService" />
+        <!-- 发布环境对应key，针对mobileSurveyKey签名 -->
+        <!-- debug 
+      
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4a195bd25e89c1a3dde81abd3c088bb7" />
+        -->
+            <!-- 针对MobileSurvey.keystore签名 
+             android:value="2aad03cd969027e319fbdc4649971cb0"
+            -->  
+        
+       <!--  
+        -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="5bc3bd27fac4d085dde9bdc4358c8b93" />
+        
+		<!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+       
+    </application>
+
+</manifest>

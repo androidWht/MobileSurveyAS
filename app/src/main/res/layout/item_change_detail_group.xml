@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_item_bg_nomal"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/replacementProjectTxt"
+            style="@style/new_item_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16dip" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="零件名称："
+                android:textSize="14dip" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/factoryPartsNumberTxt"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="系统金额："
+                android:textSize="14dip" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/systemPriceTxt"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="查勘报价："
+                android:textSize="14dip" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/surveyQuotedPriceTxt"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="工厂价格："
+                android:textSize="14dip" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/modifyFactoryPriceTxt"
+                style="@style/new_item_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dip" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

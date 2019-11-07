@@ -1,0 +1,46 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="affair_level">
+		<item>Windows</item>
+		<item>Mac OS</item>
+		<item>Linux</item>
+		<item>uninx</item>
+	</string-array>
+	
+    <string-array name="loss_item">
+        
+        <item>左前部</item>
+		<item>右前部</item>
+		<item>左后部</item>
+		<item>右后部</item>
+	    <item>左侧车身</item>
+		<item>右侧车身</item>
+        
+        
+    </string-array>
+    
+    <string-array name="repaire_type">
+        
+        <item>换件</item>
+		<item>维修</item>
+		
+        
+        
+    </string-array>
+    
+     <string-array name="set_price_type">
+        
+        <item>4s店维修</item>
+		<item>非4s点维修</item>
+    </string-array>
+    
+    <string-array name="set_loss_other_name">
+          <item>发动机油</item>
+		<item>变速箱油</item>
+		  <item>转向油</item>
+		<item>防冻油</item>
+    </string-array>
+    
+    
+    
+    
+</resources>

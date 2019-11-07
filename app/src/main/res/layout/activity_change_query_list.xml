@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <!-- head start -->
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#555555" >
+
+        <TextView
+            android:id="@+id/caseCenterTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="换件项目"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <!-- head end -->
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/hint_searchParts" >
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/tableRow"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/new_list_title" >
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="选项" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="零件名称" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="原厂零件编号"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="原厂零件名称"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="零件分组名称"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/task_list_tab_2"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="参考价" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvperson"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_layout"
+        android:layout_below="@+id/tableRow"
+        android:divider="#22000099"
+        android:dividerHeight="0.5px"
+        android:fadingEdge="none"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp" />
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

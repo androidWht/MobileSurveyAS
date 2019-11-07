@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/new_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <!-- logo图片 start -->
+
+    <LinearLayout
+        android:id="@+id/logonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="60dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/new_login_logo" />
+
+    </LinearLayout>
+    <!-- logo图片 end -->
+
+
+    <!-- 登录框 start -->
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logonLayout"
+        android:background="@drawable/new_login_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dip" >
+          <TextView
+            android:id="@+id/tipsTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="正式版"
+            android:textColor="#FF0000"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:gravity="center_vertical"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:text="用  户  名"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/username"
+                style="@style/login_edit"
+                android:layout_height="30dip"
+                android:gravity="center_vertical"
+                android:hint="@string/user_name"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:gravity="center_vertical"
+                android:paddingRight="5dip"
+                android:singleLine="true"
+                android:text="密        码"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/login_edit"
+                android:layout_height="30dip"
+                android:gravity="center_vertical"
+                android:hint="@string/password"
+                android:password="true" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/remember_me_cb"
+                style="@style/MCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="73dp"
+                android:text="@string/remember_me"
+                android:textColor="#222222" />
+
+            <CheckBox
+                android:id="@+id/wifiCb"
+                style="@style/MCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_weight="1.0"
+                android:text="使用wifi"
+                android:textColor="#222222"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dip"
+            android:layout_marginLeft="17dip"
+            android:layout_marginTop="12dip"
+            android:src="@drawable/spilt_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:gravity="center"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="访问模式"
+                android:textColor="#222222"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/accessModeSp"
+                style="@style/login_spinner1_style"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dip" />
+
+            <CheckBox
+                android:id="@+id/loss_cb"
+                style="@style/MCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.0"
+                android:checked="true"
+                android:enabled="false"
+                android:text="@string/loss"
+                android:textColor="#222222"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/dispatch_cb"
+                style="@style/MCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:checked="true"
+                android:enabled="false"
+                android:text="@string/dispatch"
+                android:textColor="#222222"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/new_login_loginbtn"
+                android:text="@string/login"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/new_login_canclebtn"
+                android:text="@string/cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 登录框 end -->
+
+
+    <!-- 预留 start -->
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:layout_below="@+id/loginLayout"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="移动查勘定损系统"
+            android:textColor="@color/white"
+            android:textSize="12dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Copyright @ 2011-2015 SINOSOFT All rights reserved"
+            android:textColor="@color/darkgray"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <!-- 预留 start -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:visibility="gone" >
+
+        <CheckBox
+            android:id="@+id/primary_survey_cb"
+            style="@style/MCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="@string/primary_survey"
+            android:textColor="#222222"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/agent_driving_cb"
+            style="@style/MCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:text="@string/agent_driving"
+            android:textColor="#7fffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/version_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="10dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_textSize" />
+    </LinearLayout>
+
+</RelativeLayout>

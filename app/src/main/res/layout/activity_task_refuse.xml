@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#C9C9C9"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/refuse_task_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#555555"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="拒绝任务" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0" >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+				<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:text="基本信息"
+                    android:textColor="#000000"
+                    android:textSize="23dip" >
+                </TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dip"
+                        android:paddingRight="10dip" >
+
+                        <TextView
+                            style="@style/refuse_task_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_head_title"
+                            android:text="报  案  号：" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/refuse_report_no"
+                            style="@style/refuse_task_edit"
+                            android:layout_width="300dip"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_content_title"
+                            android:hint="报案号" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/refuse_task_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_head_title"
+                            android:text="出险时间：" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/refuse_accident_time"
+                            style="@style/refuse_task_edit"
+                            android:layout_width="300dip"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_content_title"
+                            android:hint="出险时间" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dip"
+                        android:paddingRight="10dip" >
+
+                        <TextView
+                            style="@style/refuse_task_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_head_title"
+                            android:text="报  案  人：" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/refuse_reporter"
+                            style="@style/refuse_task_edit"
+                            android:layout_width="300dip"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_content_title"
+                            android:hint="报案人" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/refuse_task_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_head_title"
+                            android:text="报案时间：" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/refuse_report_time"
+                            style="@style/refuse_task_edit"
+                            android:layout_width="300dip"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_content_title"
+                            android:hint="报案时间" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dip"
+                        android:paddingRight="10dip" >
+
+                        <TextView
+                            style="@style/refuse_task_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_head_title"
+                            android:text="联系电话：" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/refuse_phone"
+                            style="@style/refuse_task_edit"
+                            android:layout_width="300dip"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_content_title"
+                            android:hint="联系电话" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+					
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:text="出险信息"
+                        android:textColor="#000000"
+                        android:textSize="23dip" >
+                    </TextView>
+                    
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dip"
+                        android:paddingRight="10dip" >
+
+                        <TextView
+                            style="@style/refuse_task_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/new_item_head_title"
+                            android:gravity="center"
+                            android:text="出险原因：" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/refuse_accident_reason"
+                            style="@style/refuse_task_edit"
+                            android:layout_width="700dip"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_content_title"
+                            android:hint="出险原因" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dip"
+                        android:paddingRight="10dip" >
+
+                        <TextView
+                            style="@style/refuse_task_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/new_item_head_title"
+                            android:gravity="center"
+                            android:text="出险地点：" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/refuse_accident_addr"
+                            style="@style/refuse_task_edit"
+                            android:layout_width="700dip"
+                            android:layout_height="40dip"
+                            android:background="@drawable/new_item_content_title"
+                            android:hint="出险地点" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="30dip"
+                        android:paddingRight="10dip" >
+
+                        <TextView
+                            style="@style/refuse_task_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/new_item_head_title"
+                            android:gravity="center"
+                            android:text="拒绝原因：" >
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/refuse_reason"
+                            style="@style/new_enable_refuse_task_edit"
+                            android:layout_width="700dip"
+                            android:layout_height="40dip"
+                            android:enabled="true"
+                            android:background="@drawable/new_item_content_title"
+                            android:hint="拒绝原因" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- footer layout start -->
+    <LinearLayout
+        android:id="@+id/loss_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/refuse_task_refuseBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="保存数据"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/refuse_task_backBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp" />
+    </LinearLayout>
+    <!-- footer layout end -->
+
+</RelativeLayout>

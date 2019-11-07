@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9" >
+
+    <!-- 解决键盘弹出问题 -->
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" />
+    <!-- title layout start -->
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#555555"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/caseCenterTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/loss_basic"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <!-- title layout end -->
+
+
+    <!-- body layout start -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/loss_layout"
+        android:layout_below="@+id/layout1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="20dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:text="报    案    号:"
+                        android:textColor="#080808" />
+
+                    <TextView
+                        android:id="@+id/registNoTxt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:textColor="#080808"
+                        android:textSize="16dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/LinearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="定  损 日 期:"
+                        android:textColor="#080808" />
+
+                    <Button
+                        android:id="@+id/defLossDateBtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/time_btn"
+                        android:ems="10"
+                        android:textSize="20dip"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/defLossDateBtn1"
+                        style="@style/edit_text_style"
+                        android:layout_width="172dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:singleLine="false"
+                        android:textSize="16sp" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="定  损 方 式:"
+                        android:textColor="#080808" />
+
+                    <TextView
+                        android:id="@+id/cetainLossTypeTv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:textColor="#080808"
+                        android:textSize="16dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="修理厂类型:"
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/repairFactoryTypeSp"
+                        style="@style/sm_spinner_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/basic_LinearLayout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="修理厂名称:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/repairFactoryCodeSp"
+                        style="@style/edit_text_style"
+                        android:layout_width="172dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="请输入维修厂"
+                        android:singleLine="false"
+                        android:textSize="16sp" >
+                    </EditText>
+                    <!--
+                    <Spinner
+                        android:id="@+id/repairFactoryCodeSp"
+                        style="@style/sm_spinner_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:hint="请输入修改厂名称"
+                        android:textColor="#080808" />
+                    -->
+                </LinearLayout>
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|right"
+                    android:paddingRight="5dp" >
+
+                    <Button
+                        android:id="@+id/repairSearchBtn"
+                        android:layout_width="100dip"
+                        android:layout_height="35dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/sm_loss_middle_btn"
+                        android:text="快速检索"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center|right"
+                    android:paddingRight="5dp" >
+
+                    <CheckBox
+                        android:id="@+id/addCommonFactoryCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加入常用修理厂"
+                        android:textColor="#080808"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/commonFactoryButton"
+                        android:layout_width="100dip"
+                        android:layout_height="35dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/sm_loss_middle_btn"
+                        android:text="常用修理厂"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dip" />
+                </LinearLayout>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="定  损 地 点:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/defSiteExt"
+                        style="@style/edit_text_style"
+                        android:layout_width="172dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="定  损 意 见:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/lossOptionExt"
+                        style="@style/edit_text_style"
+                        android:layout_width="172dip"
+                        android:layout_height="60dip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="left|top"
+                        android:inputType="textMultiLine"
+                        android:singleLine="false"
+                        android:textSize="16sp" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right" >
+
+                    <Button
+                        android:id="@+id/historyOpinionBtn"
+                        android:layout_width="100dip"
+                        android:layout_height="35dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/sm_loss_middle_btn"
+                        android:text="历史意见"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dip" />
+
+                    <Button
+                        android:id="@+id/selectOptionBtn"
+                        android:layout_width="100dip"
+                        android:layout_height="35dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/sm_loss_middle_btn"
+                        android:text="选  择"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dip" />
+
+                    <Button
+                        android:id="@+id/localFeedbackBtn"
+                        android:layout_width="100dip"
+                        android:layout_height="35dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/sm_loss_middle_btn"
+                        android:text="自定义"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <!--
+                     <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:text="车    牌    号:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/licenseNoExt"
+                        style="@style/edit_text_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="请输入车牌号"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/basic_LinearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="损    失    方:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/defLossCarTypeExt"
+                        style="@style/edit_text_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:maxLength="30"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/basic_LinearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="车            主:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/carOwnerExt"
+                        style="@style/edit_text_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:maxLength="30"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/basic_LinearLayout5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="车  牌 种 类:"
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/licenseTypeSp"
+                        style="@style/sm_spinner_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="商业险责任:"
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/indemnityDutySp"
+                        style="@style/sm_spinner_style"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/basic_LinearLayout10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/flied_title_name"
+                        android:layout_width="120dip"
+                        android:text="交强险责任:"
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/indemDutyCiExt"
+                        style="@style/edit_text_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:maxLength="30"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- body layout end -->
+
+
+    <!-- footer layout start -->
+
+
+    <!-- footer layout end -->
+
+</RelativeLayout>

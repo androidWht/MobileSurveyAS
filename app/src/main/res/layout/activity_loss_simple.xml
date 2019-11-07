@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <!-- title layout start -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#555555"
+            android:gravity="center_vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/caseCenterTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="定损详情"
+                android:textColor="#ffffff"
+                android:textSize="25dip" >
+            </TextView>
+
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="60dip"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/sm_loss_retun_back"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/survey_picture_btn"
+                android:layout_width="80dip"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:text="查勘照片"
+                android:textColor="#ffffff" >
+            </Button>
+        </RelativeLayout>
+        <!-- title layout end -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/sm_step_highlight_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- 1.定损保单信息 -->
+
+            <com.sinosoft.ms.utils.component.RadioButtonCenter
+                android:id="@+id/radio_button0"
+                style="@style/sm_loss_main_tab_bottom_bg"
+                android:layout_gravity="center"
+                android:background="@drawable/sm_step_01"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:tag="radio_button0" />
+
+            <!-- 2.定损影像中心 -->
+
+            <com.sinosoft.ms.utils.component.RadioButtonCenter
+                android:id="@+id/radio_button1"
+                style="@style/sm_loss_main_tab_bottom_bg"
+                android:background="@drawable/sm_step_highlight_02"
+                android:button="@null"
+                android:tag="radio_button1" />
+
+            <!-- 3.定损基本信息 -->
+
+            <com.sinosoft.ms.utils.component.RadioButtonCenter
+                android:id="@+id/radio_button2"
+                style="@style/sm_loss_main_tab_bottom_bg"
+                android:background="@drawable/sm_step_highlight_03"
+                android:button="@null"
+                android:tag="radio_button2" />
+
+            <!-- 4.定损换件录入 -->
+
+            <com.sinosoft.ms.utils.component.RadioButtonCenter
+                android:id="@+id/radio_button3"
+                style="@style/sm_loss_main_tab_bottom_bg"
+                android:background="@drawable/sm_step_highlight_04"
+                android:button="@null"
+                android:tag="radio_button3" />
+
+            <!-- 5.维修信息录入 -->
+
+            <com.sinosoft.ms.utils.component.RadioButtonCenter
+                android:id="@+id/radio_button4"
+                style="@style/sm_loss_main_tab_bottom_bg"
+                android:layout_gravity="center"
+                android:background="@drawable/sm_step_highlight_05"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="radio_button4" />
+
+            <!-- 6.辅料信息录入 -->
+
+            <com.sinosoft.ms.utils.component.RadioButtonCenter
+                android:id="@+id/radio_button5"
+                style="@style/sm_loss_main_tab_bottom_bg"
+                android:layout_gravity="center"
+                android:background="@drawable/sm_step_highlight_06"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="radio_button5" />
+
+            <!-- 7.银行信息 -->
+
+            <com.sinosoft.ms.utils.component.RadioButtonCenter
+                android:id="@+id/radio_button6"
+                style="@style/sm_loss_main_tab_bottom_bg"
+                android:layout_gravity="center"
+                android:background="@drawable/sm_step_highlight_07"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="radio_button6" />
+
+            <!-- 8.任务提交 -->
+
+            <com.sinosoft.ms.utils.component.RadioButtonCenter
+                android:id="@+id/radio_button7"
+                style="@style/sm_loss_main_tab_bottom_bg"
+                android:layout_gravity="center"
+                android:background="@drawable/sm_step_highlight_08"
+                android:button="@null"
+                android:gravity="center"
+                android:tag="radio_button7" />
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</LinearLayout>

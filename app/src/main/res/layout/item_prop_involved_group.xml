@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_item_bg_nomal"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/propType"
+        style="@style/new_item_group"
+        android:layout_width="150dip"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dip"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:text="处理eedqwe"
+        android:gravity="center" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/propParty"
+        style="@style/new_item_group"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text="处理qerqwe"
+        android:gravity="center" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/propName"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:text="处理qwerqwe"
+        style="@style/new_item_group"
+        android:gravity="center">
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/optionPropLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center" >
+        <Button
+             android:id="@+id/dealProp"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_weight="1.0"
+             android:gravity="center"
+             android:layout_marginTop="1dp"
+             android:layout_marginBottom="2dp"
+             android:background="@drawable/sm_loss_btn"
+             android:text="处理"
+             android:textColor="@color/white">
+        </Button>
+        <Button
+             android:id="@+id/delProp"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="1dp"
+             android:layout_weight="1.0"
+             android:gravity="center"
+             android:background="@drawable/sm_loss_delete_btn"
+             android:text="删除"
+             android:textColor="@color/white">
+        </Button>    
+     </LinearLayout>
+
+</LinearLayout>

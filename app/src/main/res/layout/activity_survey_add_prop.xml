@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9" >
+
+    <!-- 解决键盘弹出问题 -->
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#555555"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/caseCenterTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="物损信息"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginBottom="20dip"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="vertical">
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="20dp"
+                    android:text="基本信息"
+                    android:textColor="#080808"
+                    android:textSize="16dip" />
+
+                <LinearLayout style="@style/sm_layout1" >
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="损失类别:  "
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/loss_PropTypeSp"
+                        style="@style/sm_spinner_style"
+                        android:layout_width="fill_parent" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/sm_layout1" >
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="损失名称:  "
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/propPartExt"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:weightSum="1" >
+                    </EditText>
+                </LinearLayout>
+                
+                <LinearLayout style="@style/sm_layout1" >
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="险别:  "
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/loss_PropInsTypeSp"
+                        style="@style/sm_spinner_style"
+                        android:layout_width="fill_parent" />
+                </LinearLayout>
+                
+                <LinearLayout style="@style/sm_layout1" >
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="费用名称:  "
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/loss_PropMtypeSp"
+                        style="@style/sm_spinner_style"
+                        android:layout_width="fill_parent" />
+                </LinearLayout>
+                
+                 <LinearLayout style="@style/sm_layout1" >
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="损失金额:  "
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/dangerMoneyExt"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:numeric="decimal"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:weightSum="1" >
+                    </EditText>
+                </LinearLayout>               
+            
+                <LinearLayout style="@style/sm_layout1" >
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="物损属性:  "
+                        android:textColor="#080808" />
+
+                    <Spinner
+                        android:id="@+id/loss_typePropWSp"
+                        style="@style/sm_spinner_style"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent" />
+                    
+                     <RelativeLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical" >
+	                    <EditText
+	                        android:id="@+id/propSrcExt"
+	                        style="@style/basic_info_content"
+	                        android:layout_width="fill_parent"
+	                       
+	                        android:layout_height="40dp"
+	                        android:ems="10"
+	                        android:textSize="16sp"
+	                        android:weightSum="1" >
+	                    </EditText>
+						<ImageButton  
+					         android:id="@+id/ibtn_dropDown" 
+					         android:layout_width="wrap_content" 
+					         android:layout_height="40dp" 
+					         android:layout_alignRight="@+id/propSrcExt"
+					         android:background="@drawable/select" />    	                    
+                    </RelativeLayout>
+                </LinearLayout>              
+                
+                <LinearLayout style="@style/sm_layout1" 
+                    android:id="@+id/engine_number_line" >
+                    <TextView
+                        style="@style/new_basic_info_title"
+                        android:text="损失程度描述: "
+                        android:textColor="#080808" />
+
+                    <EditText
+                        android:id="@+id/propDescExt"
+                        style="@style/basic_info_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp"
+                        android:gravity="left|top"
+                        android:maxLength ="190" 
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:weightSum="1" >
+
+                    </EditText>
+                </LinearLayout>
+ 
+                <LinearLayout style="@style/sm_layout1" 
+                   android:visibility="gone"
+                    android:gravity="right">
+
+                    <Button
+                        android:id="@+id/idcardBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:background="@drawable/sm_loss_btn"
+                        android:text="  拍照识别  "
+                         android:drawableRight="@drawable/select"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/saveCarBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/backCarBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

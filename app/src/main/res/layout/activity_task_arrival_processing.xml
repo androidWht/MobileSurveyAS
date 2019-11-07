@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#C9C9C9"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/refuse_task_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#555555"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="到达处理" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="基本信息"
+                    android:textColor="#000000"
+                    android:textSize="20dip" >
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dip" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="10dip" >
+
+                            <TextView
+                                style="@style/refuse_task_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_head_title"
+                                android:text="报  案  号：" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/arrival_report_no"
+                                style="@style/refuse_task_edit"
+                                android:layout_width="300dip"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_content_title"
+                                android:hint="报案号" >
+                            </EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/refuse_task_content"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_head_title"
+                                android:text="出险时间：" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/arrival_accident_time"
+                                style="@style/refuse_task_edit"
+                                android:layout_width="300dip"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_content_title"
+                                android:hint="出险时间" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="10dip" >
+
+                            <TextView
+                                style="@style/refuse_task_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_center"
+                                android:text="报  案  人：" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/arrival_reporter"
+                                style="@style/refuse_task_edit"
+                                android:layout_width="300dip"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_content_center"
+                                android:hint="报案人" >
+                            </EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/refuse_task_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_bottom_bg"
+                                android:text="报案时间：" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/arrival_report_time"
+                                style="@style/refuse_task_edit"
+                                android:layout_width="300dip"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_content_bottom"
+                                android:hint="报案时间" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="10dip" >
+
+                            <TextView
+                                style="@style/refuse_task_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_bottom_bg"
+                                android:text="联系电话：" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/arrival_phone"
+                                style="@style/refuse_task_edit"
+                                android:layout_width="300dip"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_content_bottom"
+                                android:hint="联系电话" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="出险信息"
+                        android:textColor="#000000"
+                        android:textSize="20dip" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="30dip" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="10dip" >
+
+                            <TextView
+                                style="@style/refuse_task_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_head_title"
+                                android:gravity="center"
+                                android:text="出险原因：" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/arrival_accident_reason"
+                                style="@style/refuse_task_edit"
+                                android:layout_width="700dip"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_content_title"
+                                android:hint="出险原因" >
+                            </EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="10dip" >
+
+                            <TextView
+                                style="@style/refuse_task_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_center"
+                                android:gravity="center"
+                                android:text="出险地点：" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/arrival_accident_addr"
+                                style="@style/refuse_task_edit"
+                                android:layout_width="700dip"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_content_center"
+                                android:hint="出险地点" >
+                            </EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="10dip" >
+
+                            <TextView
+                                style="@style/refuse_task_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dip"
+                                android:background="@drawable/new_item_center"
+                                android:gravity="center"
+                                android:text="当前地点：" >
+                            </TextView>
+
+                            <EditText
+                                android:id="@+id/arrival_current_addr"
+                                style="@style/new_enable_refuse_task_edit"
+                                android:layout_width="700dip"
+                                android:layout_height="40dip"
+                                android:enabled="true"
+                                android:background="@drawable/new_item_content_center"
+                                android:hint="当前地点" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- footer layout start -->
+    <LinearLayout
+        android:id="@+id/loss_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/arrival_task_arrivalBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="到达现场"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/arrival_task_backBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="2"
+            android:background="@drawable/sm_unin_btn_bg"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp" />
+    </LinearLayout>
+    <!-- footer layout end -->
+
+</RelativeLayout>

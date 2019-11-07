@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="换件项目清单"
+            android:textColor="@color/flied_name"
+            android:textSize="16dip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow1"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/new_list_title"
+                android:gravity="center"
+                android:padding="10dip" >
+
+                <TextView
+                    style="@style/task_list_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/replacementProject" />
+
+                <TextView
+                    style="@style/task_list_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="原厂零件名称" />
+
+                <TextView
+                    style="@style/task_list_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/systemPrice"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/task_list_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/surveyQuotedPrice"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/task_list_tab_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/modifyFactoryPrice"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ExpandableListView
+                android:id="@+id/lossChangeModfiyList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/tableRow2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#FFCC00"
+                android:fadingEdge="none"
+                android:groupIndicator="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

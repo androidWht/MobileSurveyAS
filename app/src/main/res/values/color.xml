@@ -1,0 +1,13 @@
+<resources>
+   <color name="checkbox_text_color">#f00</color> 
+   <color name="red">#ff0000</color>
+   <color name="green">#006600</color>
+   <color name="text_prompt_color">#cacaca</color>
+   <color name="white">#FFFFFFFF</color>
+   <color name="black">#000000</color>
+   <color name="darkgray">#938192</color>
+   <color name="white1">#00FFFFFF</color>
+   <color name="clear">#FF000000</color>
+   <color name="flied_name">#080808</color>
+   <color name="black_transparency">#55000000</color>
+</resources>

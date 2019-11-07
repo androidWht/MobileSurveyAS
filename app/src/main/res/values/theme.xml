@@ -1,0 +1,7 @@
+<resources>  
+    <style name="theme" parent="android:Theme.Black">   
+    	<item name="android:windowNoTitle">true</item>   
+    	<item name="android:textSize">14sp</item>   
+    	<item name="android:textColor">#FFFF0000</item>   
+    </style> 
+</resources>

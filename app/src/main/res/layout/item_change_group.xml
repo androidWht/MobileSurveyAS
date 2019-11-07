@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/new_item_bg_nomal"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:paddingTop="10dip"
+        android:id="@+id/originalNameTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        style="@style/new_item_group"
+        android:gravity="center" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/chgLocPriceTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/new_item_group"
+        android:gravity="center" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/lossCountTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/new_item_group"
+        android:gravity="center" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/chgCompSetCodeTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/new_item_group"
+        android:gravity="center" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/remnantTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        style="@style/new_item_group"
+        android:gravity="center" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/optionLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        style="@style/new_item_group"
+        android:orientation = "horizontal"
+        android:gravity="center" >
+    </LinearLayout>
+
+</LinearLayout>

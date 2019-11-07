@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/loss_basic"
+        android:textColor="@color/flied_name"
+        android:textSize="16dip" />
+
+    <LinearLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/registNo"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/registNoTxt"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/handlerCode"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/handlerCode"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/repairFactoryType"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/repairFactoryType"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/defLossDate"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/defLossDate"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/cetainLossType"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/cetainLossType"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/repairFactoryCode"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/repairFactoryCode"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/defSite"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/defSite"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/sendDate"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/sendDate"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/lossLevel"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/lossLevel"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/estimatedDate"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/estimatedDate"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/damagePurchasePrice"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/damagePurchasePrice"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/caseFlag"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/caseFlag"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/intermediaryCode"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/intermediaryCode"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/intermediaryName"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/intermediaryName"
+                style="@style/new_item_field"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/intermediaryFlag"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/intermediaryFlag"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:padding="10dip"
+                android:text="公估公司名称："
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lIntermediaryCode"
+                style="@style/new_item_field"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/lossPart"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lossPart"
+                style="@style/new_item_field"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/damageDate"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/damageDate"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/lossOption"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/lossOption"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

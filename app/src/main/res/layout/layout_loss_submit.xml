@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="合计换件金额:"
+                    android:textColor="#080808" />
+
+                <EditText
+                    android:id="@+id/sumChgCompFeeExt"
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="5dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:numeric="decimal" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="合计修改金额:"
+                    android:textColor="#080808" />
+
+                <EditText
+                    android:id="@+id/sumRepairFeeExt"
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="5dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:numeric="decimal" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="合 计 辅 料 费:"
+                    android:textColor="#080808" />
+
+                <EditText
+                    android:id="@+id/sumMaterialFeeExt"
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_marginRight="5dip"
+                    android:numeric="decimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="定损合计金额:"
+                    android:textColor="#080808" />
+
+                <EditText
+                    android:id="@+id/sumLossFeeExt"
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="5dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:numeric="decimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/freeLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="折残金额:"
+                    android:textColor="#080808" />
+
+                <EditText
+                    android:id="@+id/sumRemnantExt"
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_marginRight="5dip"
+                    android:numeric="decimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="施救费:"
+                    android:textColor="#080808" />
+
+                <EditText
+                    android:id="@+id/sumRescueFeeExt"
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="5dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:numeric="decimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/chagePCBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sm_loss_middle_btn"
+                    android:text="转电脑处理"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/loss_bluetoothPrintBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sm_loss_middle_btn"
+                    android:text="打印定损单"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/upload_setloss_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sm_loss_middle_btn"
+                    android:text="提交定损"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

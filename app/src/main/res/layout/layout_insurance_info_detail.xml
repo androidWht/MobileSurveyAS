@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <!-- 解决键盘弹出问题 -->
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <!-- head start -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/businessLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/insurance_info_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:text="商业险"
+                    android:textColor="@color/flied_name"
+                    android:textSize="16dip" >
+                </TextView>
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:stretchColumns="1"
+                    android:textColor="#aaaaaa" >
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="保单号：  " >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_policyNo"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="被保人：  " >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_insuredName"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="车牌号：  " >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_licenseNo"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="车型名称：  " >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_brandName"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="起保日期：  " >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_startDate"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="终保日期：" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_endDate"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" >
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    style="@style/insurance_info_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:paddingTop="15dip"
+                    android:text="险别信息"
+                    android:textColor="@color/flied_name"
+                    android:textSize="16dip" >
+                </TextView>
+
+                <!-- 险别信息 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/new_list_title"
+                        android:gravity="center" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="险别" >
+                        </TextView>
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="不计免赔/保额" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/rightTitle3"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="险别名称"
+                            android:visibility="gone" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/rightTitle4"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="投保不计免赔"
+                            android:visibility="gone" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ListView
+                            android:id="@+id/leftInsuranceList"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:cacheColorHint="#00000000"
+                            android:scrollbars="none" >
+                        </ListView>
+
+                        <TextView
+                            android:id="@+id/dividerTv2"
+                            android:layout_width="0.5dip"
+                            android:layout_height="fill_parent"
+                            android:background="@color/flied_name"
+                            android:visibility="gone" />
+
+                        <ListView
+                            android:id="@+id/rightInsuranceList"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="5dip"
+                            android:cacheColorHint="#00000000"
+                            android:scrollbars="none" >
+                        </ListView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dividerTV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/flied_name"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/policyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/insurance_info_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="交强险"
+                    android:textColor="@color/flied_name"
+                    android:textSize="16dip" >
+                </TextView>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:stretchColumns="1"
+                    android:textColor="#aaaaaa" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="保单号：  " >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_policyNo2"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1231231" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="被保人：  " >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_insuredName2"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="张三" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="车牌号：  " >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_licenseNo2"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="粤D13132" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="车型名称：  " >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_brandName2"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="宝马" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="起保日期：  " >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_startDate2"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2012-12-01" >
+                        </TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="终保日期：" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/policy_endDate2"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2013-12-01" >
+                        </TextView>
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    style="@style/insurance_info_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:paddingTop="20dip"
+                    android:text="险别信息"
+                    android:textColor="@color/flied_name"
+                    android:textSize="16dip"
+                    android:visibility="gone" >
+                </TextView>
+
+                <!-- 险别信息 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/new_list_title"
+                        android:gravity="center" >
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="险别" >
+                        </TextView>
+
+                        <TextView
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="不计免赔" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/rightTitle1"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="险别名称"
+                            android:visibility="gone" >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/rightTitle2"
+                            style="@style/insurance_info_detail_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="center"
+                            android:text="投保不计免赔"
+                            android:visibility="gone" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dip"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ListView
+                            android:id="@+id/leftInsuranceList2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:cacheColorHint="#00000000" >
+                        </ListView>
+
+                        <TextView
+                            android:id="@+id/dividerTv1"
+                            android:layout_width="0.5dip"
+                            android:layout_height="fill_parent"
+                            android:background="@color/flied_name"
+                            android:visibility="gone" />
+
+                        <ListView
+                            android:id="@+id/rightInsuranceList2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:cacheColorHint="#00000000" >
+                        </ListView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 约定驾驶员信息 -->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

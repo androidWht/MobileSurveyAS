@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:layout_gravity="center_horizontal|center_vertical">
+	<LinearLayout
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_horizontal"
+		android:background="@drawable/alert" android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="10dip"
+			android:textColor="#ffffff" android:text="About to call 323"
+			android:textStyle="bold" android:textSize="20sp" android:id="@+id/dialog_title" />
+	
+		<LinearLayout
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:layout_gravity="center_horizontal" android:paddingLeft="20dp"
+			android:paddingRight="20dp" android:layout_marginTop="15dip">
+			<com.sinosoft.ms.utils.component.datadialog.WheelView
+				android:id="@+id/query_hour" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_weight="1" />
+			<com.sinosoft.ms.utils.component.datadialog.WheelView
+				android:id="@+id/query_minute" android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_width="fill_parent"/>
+		</LinearLayout>
+
+		<LinearLayout 
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginTop="15dip"
+			android:layout_marginBottom="10dip" android:gravity="center_horizontal">
+			<Button android:layout_height="40dip" android:layout_width="0dip"
+				android:background="@drawable/custom_button" android:layout_weight="0.5"
+				android:layout_gravity="left" android:textColor="#ffffff"
+				android:text="确定" android:textStyle="bold"
+				android:layout_marginLeft="10dip" android:id="@+id/ok" />
+			<Button android:layout_height="40dip" android:layout_width="0dip"
+				android:background="@drawable/custom_button" android:text="取消"
+				android:textStyle="bold" android:layout_weight="0.5"
+				android:textColor="#ffffff" android:layout_marginRight="10dip"
+				android:id="@+id/cancel" />
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

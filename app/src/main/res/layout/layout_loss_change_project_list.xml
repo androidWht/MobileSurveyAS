@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+
+    <!-- lossChangeModfiyList layout start -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/change_btn_layout"
+        android:layout_below="@+id/tableRow1"
+        android:layout_gravity="center"
+        android:padding="5dip" 
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/new_list_title"
+                android:gravity="center"
+                android:padding="10dip" >
+
+                <TextView
+                    style="@style/task_list_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/replacementProject" />
+
+                <TextView
+                    style="@style/task_list_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/factoryPartsNumber" 
+                    android:visibility="gone"/>
+
+                <TextView
+                    style="@style/task_list_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/systemPrice"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/task_list_tab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/surveyQuotedPrice"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/task_list_tab_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/modifyFactoryPrice"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/task_list_tab_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:text="@string/option"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ExpandableListView
+                android:id="@+id/lossChangeModfiyList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableRow2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#FFCC00"
+                android:fadingEdge="none"
+                android:groupIndicator="@null" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/lossChangeModfiyList" >
+
+                <Button
+                    android:id="@+id/addChangeProjectBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/sm_loss_middle_btn"
+                    android:layout_margin="5dip"
+                    android:text="新增换件信息"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/definedChangeProjectBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/sm_loss_middle_btn"
+                    android:layout_margin="5dip"
+                    android:text="自定义换件信息"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- caseList layout end -->
+
+
+    <!-- footer layout start -->
+
+    <LinearLayout
+        android:id="@+id/change_btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/simple_setloss_vehicle_back"
+            style="@style/bottom_btn_style"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="返回"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/simple_setloss_vehicle_save"
+            style="@style/bottom_btn_style"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="暂存数据"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+    </LinearLayout>
+    <!-- footer layout end -->
+
+</RelativeLayout>

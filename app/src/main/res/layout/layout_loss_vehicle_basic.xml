@@ -1,0 +1,275 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    android:orientation="vertical" >
+
+    <!-- 解决键盘弹出问题 -->
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <!-- head start -->
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#555555" >
+
+        <TextView
+            android:id="@+id/caseCenterTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/vehicle_basic_info"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <!-- head end -->
+
+
+    <!-- body start -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/loss_layout"
+        android:layout_below="@+id/layout_title"
+        android:layout_gravity="center"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dip" >
+
+            <LinearLayout
+                android:id="@+id/vehicle_LinearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="车牌号码:"
+                    android:textColor="#080808" />
+
+                <TextView
+                    android:id="@+id/plateNoTxt"
+                    style="@style/text_style"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:textColor="#080808"
+                    android:textSize="16dip"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/licenseNoExt"
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dip"
+                    android:ems="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vehicle_LinearLayout100"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="发动机号:"
+                    android:textColor="#080808" />
+
+                <EditText
+                    android:id="@+id/engineNumber"
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dip" 
+                    android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/vehicle_LinearLayout101"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="车架号／VIN:"
+                    android:textColor="#080808" />
+
+                <EditText
+                    android:id="@+id/frameNumber"
+                    style="@style/edit_text_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dip" 
+                    android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/vehicle_LinearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="车辆种类名称:"
+                    android:textColor="#080808" />
+
+                <Spinner
+                    android:id="@+id/vehKindCodeSp"
+                    style="@style/sm_spinner_style"
+                    android:layout_width="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="初次登记日期:"
+                    android:textColor="#080808" />
+
+                <Button
+                    android:id="@+id/vehYearTypeBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/time_btn"
+                    android:ems="10"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vehicle_LinearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="定损车型名称:"
+                    android:textColor="#080808" />
+
+                <EditText
+                    android:id="@+id/vehCertainNameExt"
+                    style="@style/edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:maxLength="60"
+                    android:singleLine="false"
+                    android:textSize="16sp" >
+                </EditText>
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="自定义车型标志:"
+                    android:textColor="#080808"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/selfConfigFlagSp"
+                    style="@style/spinner_select_style"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dip"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right" >
+
+                <Button
+                    android:id="@+id/modifyVehicleBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/sm_loss_btn"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="修改定损车型"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:layout_gravity="center_vertical"
+                    android:text="险     别:"
+                    android:textColor="#080808" />
+
+                <Spinner
+                    android:id="@+id/insureTermSp"
+                    style="@style/sm_spinner_style"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vehicle_LinearLayout11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:layout_gravity="center_vertical"
+                    android:text="备     注:"
+                    android:textColor="#080808" />
+
+                <EditText
+                    android:id="@+id/remarkExt"
+                    style="@style/edit_text_style"
+                    android:layout_width="175dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dip"
+                    android:ems="10"
+                    android:singleLine="false"
+                    android:textSize="16sp" >
+                </EditText>
+            </LinearLayout>
+            <!-- 车辆基本信息 -->
+        </LinearLayout>
+    </ScrollView>
+    <!-- footer layout start -->
+    <!-- footer layout end -->
+
+</RelativeLayout>

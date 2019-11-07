@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:visibility="gone"
+        android:background="@color/flied_name" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:visibility="gone"
+        android:text="@string/vehicle_basic_info"
+        android:textColor="@color/flied_name"
+        android:textSize="16dip" />
+
+    <LinearLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout0"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/caseNo"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/caseNo"
+                style="@style/new_item_field"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout0"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/plateNo"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/plateNo"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/vehKindName"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/vehKindCode"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/vehYearType"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/vehYearType"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/vehCertainName"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/vehCertainName"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/vehCertainCode"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/vehCertainCode"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/vehSeriName"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/vehSeriName"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/vehSeriCode"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/vehSeriCode"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/vehFactoryName"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/vehFactoryName"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/vehBrandName"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/vehBrandName"
+                style="@style/new_item_field"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/selfConfigFlag"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/selfConfigFlag"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/version"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/version"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/vehGroupName"
+                android:textColor="@color/flied_name" />
+
+            <TextView
+                android:id="@+id/vehGroupName"
+                style="@style/new_item_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/sumChgCompFee"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sumChgCompFee"
+                style="@style/new_item_field"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/sumRepairFee"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sumRepairFee"
+                style="@style/new_item_field"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/sumMaterialFee"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sumMaterialFee"
+                style="@style/new_item_field"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/sumLossFee"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sumLossFee"
+                style="@style/new_item_field"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/new_item_field"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/remark"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/remark"
+                style="@style/new_item_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/flied_name"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
